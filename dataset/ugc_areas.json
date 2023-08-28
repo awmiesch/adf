@@ -1,0 +1,80 @@
+{
+	"name": "ugc_areas",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "datalake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "ugc_areas.csv",
+				"container": "files"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "combined_id",
+				"type": "String"
+			},
+			{
+				"name": "ugc_type",
+				"type": "String"
+			},
+			{
+				"name": "wfo",
+				"type": "String"
+			},
+			{
+				"name": "valid_from_date",
+				"type": "String"
+			},
+			{
+				"name": "valid_to_date",
+				"type": "String"
+			},
+			{
+				"name": "state",
+				"type": "String"
+			},
+			{
+				"name": "fips",
+				"type": "String"
+			},
+			{
+				"name": "name",
+				"type": "String"
+			},
+			{
+				"name": "lat",
+				"type": "String"
+			},
+			{
+				"name": "lon",
+				"type": "String"
+			},
+			{
+				"name": "timezone",
+				"type": "String"
+			},
+			{
+				"name": "display_name",
+				"type": "String"
+			},
+			{
+				"name": "short_ugc",
+				"type": "String"
+			},
+			{
+				"name": "region",
+				"type": "String"
+			}
+		]
+	}
+}
