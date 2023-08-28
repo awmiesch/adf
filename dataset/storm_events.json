@@ -1,0 +1,68 @@
+{
+	"name": "storm_events",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "datalake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "StormEvents_locations-ftp_v1.0_d2022_c20230817.csv",
+				"container": "files"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "YEARMONTH",
+				"type": "String"
+			},
+			{
+				"name": "EPISODE_ID",
+				"type": "Int"
+			},
+			{
+				"name": "EVENT_ID",
+				"type": "Int"
+			},
+			{
+				"name": "LOCATION_INDEX",
+				"type": "Int"
+			},
+			{
+				"name": "RANGE",
+				"type": "Int"
+			},
+			{
+				"name": "AZIMUTH",
+				"type": "String"
+			},
+			{
+				"name": "LOCATION",
+				"type": "String"
+			},
+			{
+				"name": "LATITUDE",
+				"type": "Int"
+			},
+			{
+				"name": "LONGITUDE",
+				"type": "Int"
+			},
+			{
+				"name": "LAT2",
+				"type": "Int"
+			},
+			{
+				"name": "LON2",
+				"type": "Int"
+			}
+		]
+	}
+}
