@@ -33,11 +33,11 @@
 			},
 			{
 				"name": "valid_from_date",
-				"type": "String"
+				"type": "DateTime"
 			},
 			{
 				"name": "valid_to_date",
-				"type": "String"
+				"type": "DateTime"
 			},
 			{
 				"name": "state",
@@ -45,7 +45,7 @@
 			},
 			{
 				"name": "fips",
-				"type": "String"
+				"type": "Int"
 			},
 			{
 				"name": "name",
@@ -53,11 +53,11 @@
 			},
 			{
 				"name": "lat",
-				"type": "String"
+				"type": "Int"
 			},
 			{
 				"name": "lon",
-				"type": "String"
+				"type": "Int"
 			},
 			{
 				"name": "timezone",
